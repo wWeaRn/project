@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="module" defer src="js/script.js"></script>
+    <title>Contacts</title>
+</head>
+<body>
+    <div class="contacts wrapper">
+        <div class="contacts_header">
+            <a href="index.html" class="icon">
+                <img src="resources/img/call.png" width="25" height="25">
+            </a>
+            <input type="text" class="searchbox" placeholder="Search">
+        </div>
+        <div class="contacts_container" onload="loadContactList()">
+            <div class="contact">
+            <img class="avatar" src="resources/contact/user.png" width="50" height="50">
+            <div class="contact_info">
+                <span class="info_name">Name</span><br>
+                <span class="info_phone">Phone</span>
+            </div>
+            <div class="contact_actions">
+                <button onclick="delete()" class="action delete"></button>
+                <button class="action elected"></button>
+            </div >
+        </div>
+        </div>
+        <a href="addcontact.html" class="addcontact">
+            <span>Добавить</span>
+        </a>
+    </div>
+</body>
+</html>

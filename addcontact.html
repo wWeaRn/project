@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script defer src="js/jquery-3.6.1.js"></script>
+    <script defer src="js/jquery.maskedinput.min.js"></script>
+    <title>Add contact</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="contacts_header">
+        <a href="index.html" class="icon">
+            <img src="resources/img/call.png" width="25" height="25" alt="call">
+        </a>
+        <span>Add contact</span>
+        </div>
+        <div class="add_form">
+            <div class="form_unit">
+                <label class="name" for="name">Name</label>
+                <input id="name" placeholder="Введите имя контакта">
+            </div>
+            <div class="form_unit">
+                <label class="phone" for="phone">Phone</label>
+                <input id="phone" placeholder="Введите номер телефона">
+            </div>
+            <div class="form_unit_check">
+                <input type="checkbox" id="elected" value="isElected">
+                <label for="elected" class="check_custom"></label>
+                <label class="elected_label" >Favorites</label>
+            </div>
+        </div>
+        <button id="add_button" class="addcontact">
+            <span>Создать</span>
+        </button>
+    </div>
+    <script type="module" src="/js/addFormScript.js"></script>
+</body>
+</html>
